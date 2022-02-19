@@ -5,15 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ebilling</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 
 
     <div class="main">
         <div class="container">
-            
+            <div class="header"><h3>E-Billing</h3></div>
+
+            <div class="new">
+                <h4>Buy new token</h4>
+
+                <form action="/buy" method="post">
+                    <div class="field">
+                        <label>Meter Number:</label>
+                        <input type="text" name="meter" placeholder="Meter Number">
+                    </div>
+                    <div class="field">
+                        <label>Amount in RWF:</label>
+                        <input type="number" name="amount" placeholder="Amount" value="100">
+                    </div>
+                    <div class="field">
+                        <input type="submit" value="Proceed">
+                    </div>
+                </form>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li id="new">Buy new</li>
+                    <li id="new">Check remainig days</li>
+                </ul>
+            </nav>
         </div>
-    </div>
+        </div>
+
+       
     
 </body>
 </html>

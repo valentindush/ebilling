@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+:root{
+    --primaryColor: #111;
+    --white: #fff;
+    --fontweight: 400;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    box-shadow: 0 0 2px var(--primaryColor);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.header h3{
+    text-align: center;
+    
+    color: var(--primaryColor);
+    padding-bottom: 20px;
+}
+
+.new h4{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form .field{
+    display: flex;
+    margin: 10px;
+    gap: 10PX;
+}
+
+.field input{
+    height: 30px;
+    outline: none;
+    border: 1px solid #d6d6d6;
+    padding: 1px 10px;
+}
+.field input:focus{
+border: 1px solid var(--primaryColor);
+}
+
+.field input[type="submit"]{
+    background: var(--primaryColor);
+    color: var(--white);
+    cursor: pointer;
+    transition: .3s ease;
+}
+.field input[type="submit"]:hover{
+    background-color: #312e2e;
+    border-radius: 7px;
+}
+
+.nav{
+    background-color: #d6d6d6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #111;
+}
+
+.nav ul li{
+    cursor: pointer;
+}
